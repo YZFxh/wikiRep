@@ -1,11 +1,13 @@
 package com.jiawa.wiki.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 @ComponentScan("com.jiawa")
+@MapperScan("com.jiawa.wiki.mapper")
 //如果需要扫描多个包
 //@ComponentScan({"com.jiawa","com.test"})
 @SpringBootApplication
